@@ -32,6 +32,20 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>HdrHistogram</artifactId>
+                    <groupId>org.hdrhistogram</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>stax2-api</artifactId>
+                    <groupId>org.codehaus.woodstox</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>micrometer-core</artifactId>
+                    <groupId>io.micrometer</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
