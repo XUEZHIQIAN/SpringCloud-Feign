@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 /**
  * api
  *
- * @author Hang W 
+ * @author Hang W
  */
 @FeignClient(name = "order-service", fallback = OrderServiceFallback.class)
 public interface OrderService {

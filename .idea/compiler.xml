@@ -10,12 +10,14 @@
         <module name="SpringCloud-Order" />
         <module name="SpringCloud-Api" />
         <module name="SpringCloud-Eureka" />
+        <module name="SpringCloud-Msg" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Feign" target="1.8" />
       <module name="SpringCloud-Api" target="1.8" />
       <module name="SpringCloud-Eureka" target="1.8" />
+      <module name="SpringCloud-Msg" target="1.8" />
       <module name="SpringCloud-Order" target="1.8" />
       <module name="SpringCloud-User" target="1.8" />
     </bytecodeTargetLevel>
