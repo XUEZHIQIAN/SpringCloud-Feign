@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dubbo-Service/Dubbo-Service.iml" filepath="$PROJECT_DIR$/Dubbo-Service/Dubbo-Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Feign.iml" filepath="$PROJECT_DIR$/.idea/Feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud-Api/SpringCloud-Api.iml" filepath="$PROJECT_DIR$/SpringCloud-Api/SpringCloud-Api.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud-Eureka/SpringCloud-Eureka.iml" filepath="$PROJECT_DIR$/SpringCloud-Eureka/SpringCloud-Eureka.iml" />

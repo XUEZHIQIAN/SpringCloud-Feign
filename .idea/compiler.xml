@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringCloud-User" />
+        <module name="Dubbo-Service" />
         <module name="SpringCloud-Order" />
         <module name="SpringCloud-Api" />
         <module name="SpringCloud-Eureka" />
@@ -14,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Dubbo-Service" target="1.8" />
       <module name="Feign" target="1.8" />
       <module name="SpringCloud-Api" target="1.8" />
       <module name="SpringCloud-Eureka" target="1.8" />
@@ -21,5 +23,15 @@
       <module name="SpringCloud-Order" target="1.8" />
       <module name="SpringCloud-User" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Dubbo-Service" options="" />
+      <module name="SpringCloud-Api" options="" />
+      <module name="SpringCloud-Eureka" options="" />
+      <module name="SpringCloud-Msg" options="" />
+      <module name="SpringCloud-Order" options="" />
+      <module name="SpringCloud-User" options="" />
+    </option>
   </component>
 </project>

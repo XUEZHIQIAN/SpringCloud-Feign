@@ -17,6 +17,7 @@
         <module>SpringCloud-Eureka</module>
         <module>SpringCloud-Api</module>
         <module>SpringCloud-Msg</module>
+        <module>Dubbo-Service</module>
     </modules>
 
     <parent>
@@ -32,24 +33,20 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
         <spring-kafka.version>2.2.0.RELEASE</spring-kafka.version>
+        <dubbo.version>2.7.6</dubbo.version>
+        <zookeeper.version>3.4.13</zookeeper.version>
+        <stax2-api.version>3.1.1</stax2-api.version>
+        <curator-framework.version>4.2.0</curator-framework.version>
+        <curator-recipes.version>2.12.0</curator-recipes.version>
+        <fastjson.version>1.2.33</fastjson.version>
     </properties>
 
     <dependencies>
 
         <dependency>
-            <groupId>org.springframework.kafka</groupId>
-            <artifactId>spring-kafka</artifactId>
-            <version>${spring-kafka.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <groupId>org.codehaus.woodstox</groupId>
+            <artifactId>stax2-api</artifactId>
+            <version>${stax2-api.version}</version>
         </dependency>
 
         <dependency>
@@ -62,6 +59,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -84,5 +82,19 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>apache.snapshots.https</id>
+            <name>Apache Development Snapshot Repository</name>
+            <url>https://repository.apache.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
